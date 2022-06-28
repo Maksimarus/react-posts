@@ -1,0 +1,26 @@
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+  to {
+    transform: rotate(360deg) scale(1.4);
+  }
+}
+.loaderWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.loader {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px dashed blue;
+  animation: rotate 1s infinite linear alternate;
+}

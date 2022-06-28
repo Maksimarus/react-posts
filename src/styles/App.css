@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.app {
+  max-width: 800px;
+  width: 100%;
+}
+.post {
+  display: flex;
+  padding: 20px;
+  border: 2px solid #1876d1;
+  margin-top: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+.no-posts {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.post-enter {
+  transform: translateX(-50vw);
+}
+.post-enter-active {
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+.post-exit {
+  opacity: 1;
+}
+.post-exit-active {
+  transform: translateX(50vw);
+  transition: transform 0.5s ease-in-out;
+}
